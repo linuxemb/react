@@ -1,8 +1,9 @@
 // take function return obj 
-export const increment = ()  =>
+export const increment = (nr)  =>
 {
     return {
-            type : 'INCREMENT'
+            type : 'INCREMENT',
+            payload: nr
            
     };
 };
@@ -10,7 +11,8 @@ export const increment = ()  =>
 export const decrement = ()  =>
 {
     return {
-            type : 'INCREMENT'
+            type : 'DECREMENT'
+            
            
     };
 };
